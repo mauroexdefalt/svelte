@@ -32,7 +32,7 @@
 
   <main>
     <Route path="about">Mauro teste com svelter</Route>
-    s
+    
     <Route path="login">Teste rota login</Route>
 
     <Route path="/"><Login /></Route>
