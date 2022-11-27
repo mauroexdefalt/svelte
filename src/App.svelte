@@ -1,11 +1,3 @@
-
-
-
-<script>
-  import { Router, Route, Link } from 'svelte-navigator';
-  import Login from './componentes/login/login.svelte';
-</script>
-
 <style>
   :global(body) {
     background-color: #222;
@@ -22,7 +14,10 @@
   }
 </style>
 
-
+<script>
+  import { Router, Route, Link } from 'svelte-navigator';
+  import Login from './componentes/login/login.svelte';
+</script>
 
 <Router>
   <!-- <header>
@@ -36,16 +31,12 @@
   </header> -->
 
   <main>
-    <Route path="about">Mauro teste com svelter
-		
-	</Route>
-s
+    <Route path="about">Mauro teste com svelter</Route>
+    s
     <Route path="login">Teste rota login</Route>
 
-    <Route path="/"><Login></Login></Route>
+    <Route path="/"><Login /></Route>
 
-    <Route path="pokedex">
-     
-    </Route>
+    <Route path="pokedex" />
   </main>
 </Router>

@@ -1,13 +1,7 @@
-<script>
+<style>
+</style>
 
+<script>
 </script>
 
-
-<div>
-    login
-</div>
-        
-
-<style>
-
-</style>
+<div>login</div>
