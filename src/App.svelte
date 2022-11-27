@@ -1,39 +1,32 @@
 <style>
-  :global(body) {
-    display: flex;
-  }
-  :root {
-    --cor-fundo: #555;
-  }
   main {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
+  }
+
+  header{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
   }
 </style>
 
 <script>
   import { Router, Route, Link } from 'svelte-navigator';
+  import { DarkMode } from 'flowbite-svelte';
   import Login from './componentes/login/login.svelte';
 </script>
 
+<main>
+<header class="header">
+  <DarkMode />
+</header>
 <Router>
-  <!-- <header>
-    <h1>History</h1>
-
-    <nav>
-      <Link to="/">Login</Link>
-      <Link to="about">Sobre</Link>
-      <Link to="pokedex">Pokedex</Link>
-    </nav>
-  </header> -->
-
   <main>
-   
-
-    <Route path="/"><Login /></Route>
-
-    <Route path="pokedex" />
+    <Route path="/"><Login/></Route>    
   </main>
 </Router>
+</main>
