@@ -13,30 +13,6 @@
     SidebarWrapper,
   } from 'flowbite-svelte';
   import { sineIn } from 'svelte/easing';
-  
-  let hidden2 = true;
-  const spanClass = 'flex-1 ml-3 whitespace-nowrap';
-  const transitionParameters = {
-    x: -320,
-    duration: 200,
-    easing: sineIn,
-  };
-  
-  {Drawer,Button,CloseButton,Sidebar,SidebarDropdownItem,SidebarDropdownWrapper,SidebarGroup,SidebarItem,SidebarWrapper,hidden2,spanClass,transitionParameter<script>
-  import {
-    Drawer,
-    Button,
-    CloseButton,
-    Sidebar,
-    SidebarBrand,
-    SidebarCta,
-    SidebarDropdownItem,
-    SidebarDropdownWrapper,
-    SidebarGroup,
-    SidebarItem,
-    SidebarWrapper,
-  } from 'flowbite-svelte';
-  import { sineIn } from 'svelte/easing';
   let hidden2 = true;
   let spanClass = 'flex-1 ml-3 whitespace-nowrap';
   let transitionParams = {
