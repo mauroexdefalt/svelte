@@ -1,0 +1,59 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --write ./src/**/*.{js,svelte,html,ts}",
+    "lint": "eslint './src/**/*.{js,ts,svelte}'",
+    "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
+    "prelint": "yarn format"
+  },
+  "devDependencies": {
+    "@popperjs/core": "^2.11.6",
+    "@sveltejs/vite-plugin-svelte": "^1.1.0",
+    "@tsconfig/svelte": "^3.0.0",
+    "autoprefixer": "^10.4.7",
+    "classnames": "^2.3.2",
+    "flowbite": "^1.5.4",
+    "flowbite-svelte": "^0.28.1",
+    "postcss": "^8.4.14",
+    "postcss-load-config": "^4.0.1",
+    "svelte": "^3.52.0",
+    "svelte-check": "^2.9.2",
+    "svelte-preprocess": "^4.10.7",
+    "tailwindcss": "^3.1.5",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.6.4",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "eslint-plugin-unicorn": "^45.0.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.8.0",
+    "prettier-plugin-svelte": "^2.8.1",
+    "sass": "^1.56.1"
+  },
+  "lint-staged": {
+    "*.{js,ts,svelte}": [
+      "svelte-check",
+      "yarn lint:fix"
+    ]
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
