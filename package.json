@@ -12,6 +12,7 @@
     "lint": "eslint './src/**/*.{js,ts,svelte}'",
     "lint:fix": "eslint --fix './src/**/*.{js,ts,svelte}'",
     "prelint": "yarn format"
+    
   },
   "devDependencies": {
     "@popperjs/core": "^2.11.6",
