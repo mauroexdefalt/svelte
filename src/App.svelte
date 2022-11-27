@@ -1,7 +1,6 @@
 <style>
   :global(body) {
-    background-color: #222;
-    color: #fff;
+    display: flex;
   }
   :root {
     --cor-fundo: #555;
@@ -31,9 +30,7 @@
   </header> -->
 
   <main>
-    <Route path="about">Mauro teste com svelter</Route>
-    
-    <Route path="login">Teste rota login</Route>
+   
 
     <Route path="/"><Login /></Route>
 
