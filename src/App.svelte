@@ -1,11 +1,51 @@
-<script lang="ts">
-  import { Button } from 'flowbite-svelte';
+
+
+
+<script>
+  import { Router, Route, Link } from 'svelte-navigator';
+  import Login from './componentes/login/login.svelte';
 </script>
 
-<main>
-  <h1>My App</h1>
-  <Button box-shadow="none">Default</Button>
-</main>
-
 <style>
+  :global(body) {
+    background-color: #222;
+    color: #fff;
+  }
+  :root {
+    --cor-fundo: #555;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
 </style>
+
+
+
+<Router>
+  <!-- <header>
+    <h1>History</h1>
+
+    <nav>
+      <Link to="/">Login</Link>
+      <Link to="about">Sobre</Link>
+      <Link to="pokedex">Pokedex</Link>
+    </nav>
+  </header> -->
+
+  <main>
+    <Route path="about">Mauro teste com svelter
+		
+	</Route>
+s
+    <Route path="login">Teste rota login</Route>
+
+    <Route path="/"><Login></Login></Route>
+
+    <Route path="pokedex">
+     
+    </Route>
+  </main>
+</Router>
